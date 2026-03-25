@@ -85,10 +85,6 @@ According to the subject matter, the project embeds specific Turing machines han
    - **Algorithm:** Sweeps across the zeroes crossing off every alternating `0` (modulo 2 logic). Once it reaches the end, it returns to the start and sweeps again, halving the amount of zeroes. If during any sweep it only finds an odd number of zeroes (except exactly 1 zero left), it fails.
    - **Output:** Writes `y` if the zero count was exactly a power of 2, otherwise writes `n`.
 
-6. **`universal_unary_add.json`** (Universal Turing Machine): 
-   - **Algorithm:** A true marvel of theoretical computing. The tape is pre-loaded with an immense encoded string representing: the machine states, the rules table, the virtual tape boundary, and the virtual input (the `unary_add` problem). The UTM head bounces back and forth: it reads the virtual state, locates the corresponding rule block, fetches the action/write instructions, updates the virtual tape, updates the virtual state, and repeats.
-   - **Output:** Ultimately solves the addition problem encoded on its own tape.
-
 ### 📋 Table of Contents
 - [About](#about)
 - [How It Works](#how-it-works-execution--infinite-tape)
@@ -138,7 +134,6 @@ optional arguments:
 │   ├── palindrome.json
 │   ├── 0n1n.json
 │   ├── 02n.json
-│   ├── universal_unary_add.json
 │   └── unary_sub.json
 ├── test/                       # Unit test suite for validation
 └── README.md                   # This file
@@ -148,6 +143,7 @@ optional arguments:
 ### 📖 Credits
 - **Turing Machines**: [Wikipedia - Turing Machine](https://en.wikipedia.org/wiki/Turing_machine)
 - **OCaml Documentation**: [OCaml.org](https://ocaml.org/)
+- **Les Machines de Turing - ScienceEtonnante** : [Youtube](https://www.youtube.com/watch?v=o_swEgbBhMU)
 
 ### 📄 License
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -226,10 +222,6 @@ Le sujet de ce projet exige la conception de machines de Turing capables de réa
    - **Algorithme :** Balaie les zéros de gauche à droite en barrant un `0` sur deux (logique modulo 2). Arrivé à la fin, retourne au début et relance un balayage, divisant ainsi la quantité de zéros par deux à chaque passage. Si lors d'un passage il trouve un nombre impair de zéros (sauf s'il n'en reste qu'un), il échoue.
    - **Sortie :** Écrit `y` si le nombre de zéros était bien une puissance de 2, sinon écrit `n`.
 
-6. **`universal_unary_add.json`** (Machine de Turing Universelle - UTM) :
-   - **Algorithme :** Une pure merveille d'informatique théorique. Le ruban est préchargé avec une immense chaîne encodée représentant : les états de la machine, la table de règles, la frontière logique du ruban virtuel et l'entrée à l'intérieur (le problème `unary_add`). La tête de l'UTM fait d'incessants allers-retours : elle lit l'état virtuel, localise le bloc de règle correspondant (via pattern matching), récupère les instructions write/action, met à jour le ruban virtuel, met à jour l'état virtuel et boucle.
-   - **Sortie :** Résout formellement le problème d'addition encodé sur son propre ruban.
-
 ### 📋 Table des matières
 - [À propos](#-propos-1)
 - [Fonctionnement](#-fonctionnement-excution--ruban-infini)
@@ -279,7 +271,6 @@ optional arguments:
 │   ├── palindrome.json
 │   ├── 0n1n.json
 │   ├── 02n.json
-│   ├── universal_unary_add.json
 │   └── unary_sub.json
 ├── test/                       # Suite de tests unitaires pour le CI
 └── README.md                   # Ce fichier
@@ -289,6 +280,7 @@ optional arguments:
 ### 📖 Crédits
 - **Machines de Turing** : [Wikipédia - Machine de Turing](https://fr.wikipedia.org/wiki/Machine_de_Turing)
 - **Documentation OCaml** : [OCaml.org](https://ocaml.org/)
+- **Les Machines de Turing - ScienceEtonnante** : [Youtube](https://www.youtube.com/watch?v=o_swEgbBhMU)
 
 ### 📄 Licence
 Ce projet est sous licence **MIT** - voir le fichier [LICENSE](LICENSE) pour plus de détails.
