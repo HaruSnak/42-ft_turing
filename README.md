@@ -1,4 +1,4 @@
-<img src="readme/cloud-1.png" alt="ft_turing" width="900"/>
+<img src="readme/ft_turing.png" alt="ft_turing" width="900"/>
 
 <div align="center">
 
