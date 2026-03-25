@@ -1,0 +1,13 @@
+{
+  "name": "bad_read",
+  "alphabet": ["0", "1", "."],
+  "blank": ".",
+  "states": ["scanright", "HALT"],
+  "initial": "scanright",
+  "finals": ["HALT"],
+  "transitions": {
+    "scanright": [
+      { "read": "", "to_state": "scanright", "write": "1", "action": "RIGHT" }
+    ]
+  }
+}

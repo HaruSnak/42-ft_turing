@@ -1,0 +1,13 @@
+{
+  "name": "missing_state",
+  "alphabet": ["0", "1", "."],
+  "blank": ".",
+  "states": ["scanright", "HALT"],
+  "initial": "scanright",
+  "finals": ["HALT"],
+  "transitions": {
+    "UNDECLARED_STATE": [
+      { "read": "0", "to_state": "scanright", "write": "1", "action": "RIGHT" }
+    ]
+  }
+}
